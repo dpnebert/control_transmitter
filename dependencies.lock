@@ -1,0 +1,56 @@
+dependencies:
+  esp-now:
+    dependencies:
+    - name: idf
+      version: '>=4.4'
+    - name: espressif/cmake_utilities
+      version: 0.*
+    source:
+      path: C:\Users\gama1\esp-now
+      type: local
+    version: 2.5.2
+  espressif/button:
+    component_hash: 4d3ea5c1b7a4926c9d027e0bde0188207dadb0d1841d1cec2524f0cddd22f779
+    dependencies:
+    - name: idf
+      registry_url: https://components.espressif.com
+      require: private
+      version: '>=4.0'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 2.5.0
+  espressif/cmake_utilities:
+    component_hash: 351350613ceafba240b761b4ea991e0f231ac7a9f59a9ee901f751bddc0bb18f
+    dependencies:
+    - name: idf
+      registry_url: https://components.espressif.com
+      require: private
+      version: '>=4.1'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 0.5.3
+  espressif/led_strip:
+    component_hash: 28c6509a727ef74925b372ed404772aeedf11cce10b78c3f69b3c66799095e2d
+    dependencies:
+    - name: idf
+      registry_url: https://components.espressif.com
+      require: private
+      version: '>=4.4'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 2.5.5
+  idf:
+    source:
+      type: idf
+    version: 5.3.1
+direct_dependencies:
+- esp-now
+- espressif/button
+- espressif/led_strip
+- idf
+manifest_hash: b02e0b353abe6cf05cbc8dafd7cecc9fcbcb2aa4b9b3b8c764a6ad182d0f003e
+target: esp32s3
+version: 2.0.0
